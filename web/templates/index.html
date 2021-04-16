@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="main">
+    <form id="input">
+        <div class="form-group">
+            <label>{{ keyname }}を入力 (前方一致)</label>
+            <div class="row mx-0">
+                <input type="text" id="searchKey" class="form-control col-md-10" name="key">
+                <button type="button" id="searchBtn" class="btn btn-dark col-md-2">検索</button>
+            </div>
+        </div>
+    </form>
+    <div id="output">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 文書の一覧表 -->
+                <table id="docTable" class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            {% for column in table_column_list %}
+                            <th scope="col" style="width: {{ table_width_list[loop.index0] }};">{{ column }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mx-auto w-50">
+            <button type="button" id="btnOpen" class="btn btn-dark mb-2 w-100">開く</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

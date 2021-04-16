@@ -1,0 +1,27 @@
+{
+    "page_title": "ページタイトル",
+    "docname": [
+        "ドキュメント１",
+        "ドキュメント２",
+        "ドキュメント３"
+    ],
+    "docroot": "/app/doc_root",
+    "docpath": [
+        "/doc/folder1",
+        "/doc/folder2",
+        "/doc/folder3"
+    ],
+    "keyname": "キー名",
+    "key_regex": [
+        "(^.*?(?=_))",
+        "(^.*?(?=_))",
+        "(^.*?(?=_))"
+    ],
+    "table_width": [
+        "30rem",
+        "10rem",
+        "10rem",
+        "10rem"
+    ],
+    "display_count": 8
+}
